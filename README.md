@@ -123,13 +123,13 @@ In conclusion, this analysis demonstrates the potential of machine learning algo
 
 ### TABLES AND FIGURES
 
-Figure 1: Variable importance plot
- 
+ ![Figure 1: Variable importance plot](https://github.com/shivaniRaut/Diabetese-Prediction/assets/30024267/65bf56c0-51f8-4fea-a507-35ef90fb410b)
 
-Figure 2: Error rate vs K value.
- 
 
-Figure 2 Table 1.  Accuracy, Sensitivity, and Specificity of Employed models
+ <img width="368" alt="Figure 2: Error rate vs K value" src="https://github.com/shivaniRaut/Diabetese-Prediction/assets/30024267/275bb9c3-9e9b-4d65-82b0-e110dd7c86cf">
+
+
+![Figure 2 Table 1.  Accuracy, Sensitivity, and Specificity of Employed models](https://github.com/shivaniRaut/Diabetese-Prediction/assets/30024267/3c07fc3f-6c1f-41fc-a1a2-08481b2d1579)
 
 
 
