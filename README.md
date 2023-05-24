@@ -19,32 +19,32 @@ The BRFSS is a prominent data source in public health research in the United Sta
 The raw dataset includes 21 feature variables describing demographic variables, lifestyle, and health conditions and health access of respondents and 1 target variable of diabetes. 
 
 #### Demographic:
-•	Age: 13-level age category (1=18-24, 2=25-29, …, 13=80 or older)
-•	Sex: 0=female, 1=male
-•	Education: Education level scale 1-6
-•	Income:1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more
+*	Age: 13-level age category (1=18-24, 2=25-29, …, 13=80 or older)
+*	Sex: 0=female, 1=male
+*	Education: Education level scale 1-6
+*	Income:1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more
 #### Lifestyle:
-•	BMI: Body Mass Index (continuous)
-•	Smoker: smoked at least 100 cigarettes in their lifetime, 0 = no, 1 = yes
-•	PhysActivity: physical activity in the past 30 days, 0 = no, 1 = yes
-•	Fruits: consumes fruit 1 or more times per day, 0 = no, 1 = yes
-•	Veggies: consumes veggies 1 or more times per day, 0 = no, 1 = yes
-•	HvyAlcoholConsump: adult men >= 14 drinks per week; adult women >= 7 drinks per week, 0 = no, 1 = yes
+*	BMI: Body Mass Index (continuous)
+*	Smoker: smoked at least 100 cigarettes in their lifetime, 0 = no, 1 = yes
+*	PhysActivity: physical activity in the past 30 days, 0 = no, 1 = yes
+*	Fruits: consumes fruit 1 or more times per day, 0 = no, 1 = yes
+*	Veggies: consumes veggies 1 or more times per day, 0 = no, 1 = yes
+*	HvyAlcoholConsump: adult men >= 14 drinks per week; adult women >= 7 drinks per week, 0 = no, 1 = yes
 #### Health Conditions:
-•	HighChol: 0 = no high cholesterol, 1 = high cholesterol
-•	CholCheck: 0 = no cholesterol check in 5 years, 1 = yes cholesterol check in the last 5 years
-•	HeartDiseaseorAttack: coronary heart disease (CHD) or myocardial infarction (MI), 0 = no, 1 = yes
-•	GenHlth: Would you say that in general your health is: scale 1-5, 1 = excellent,
+*	HighChol: 0 = no high cholesterol, 1 = high cholesterol
+*	CholCheck: 0 = no cholesterol check in 5 years, 1 = yes cholesterol check in the last 5 years
+*	HeartDiseaseorAttack: coronary heart disease (CHD) or myocardial infarction (MI), 0 = no, 1 = yes
+*	GenHlth: Would you say that in general your health is: scale 1-5, 1 = excellent,
 2 = very good, 3 = good, 4 = fair, 5 = poor
-•	MentHlth: days of poor mental health scale 1-30, days 1 = excellent … 30 = poor
-•	PhysHlth : physical illness or injury days in past 30 days, scale 1-30 1 = excellent … 30 = poor
-•	DiffWalk: Do you have serious difficulty walking or climbing stairs? 0 = no, 1 = yes
-•	Stroke: Have you ever had a stroke? 0 = no, 1 = yes
-•	HighBP: Blood Pressure, 0 = no high BP, 1 = high BP
-•	Diabetes_012: 0 = no diabetes, 1 = prediabetes, 2=diabetes
+*	MentHlth: days of poor mental health scale 1-30, days 1 = excellent … 30 = poor
+*	PhysHlth : physical illness or injury days in past 30 days, scale 1-30 1 = excellent … 30 = poor
+*	DiffWalk: Do you have serious difficulty walking or climbing stairs? 0 = no, 1 = yes
+*	Stroke: Have you ever had a stroke? 0 = no, 1 = yes
+*	HighBP: Blood Pressure, 0 = no high BP, 1 = high BP
+*	Diabetes_012: 0 = no diabetes, 1 = prediabetes, 2=diabetes
 #### Healthcare Access:
-•	AnyHealthcare: Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no, 1 = yes
-•	NodocbcCost: Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 0 = no, 1 = yes
+*	AnyHealthcare: Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no, 1 = yes
+*	NodocbcCost: Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 0 = no, 1 = yes
 ### Data pre-processing
 In the original dataset, diabetes was represented using a three-level coding system. We re-coded the outcome variable into a binary format, where 0 denotes the absence of diabetes or prediabetes, and 1 signifies the presence of either prediabetes or diabetes. Subsequently, we converted all categorical variables into factors. Numerical variables, such as BMI, MentlHlth, and PhysHlth, were treated as continuous variables.
 Following this, we ensured that the dataset contained no missing values. Lastly, we eliminated duplicate entries from the dataset, which amounted to 23,968 instances. After this preprocessing, the remaining dataset comprised 229,712 unique responses.
